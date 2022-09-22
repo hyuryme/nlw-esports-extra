@@ -1,0 +1,129 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ul { 
+    list-style: none;
+  }
+
+header {
+    padding-top: 32px;
+}
+
+header a {
+    display: flex;
+}
+
+header div {
+    background-image: linear-gradient(90deg, #A9A9A9 0%, #262528 50%,#6a4033 70%);
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+    width: 120px;
+    padding: 4px;
+    transition: transform .3s;
+    animation: fromLeft 1s .3s backwards;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+body {
+    background-image: url(./assets/movie-bg.jpg);
+    background-position: auto;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+
+section {
+    color: #FFFFFF;
+}
+
+section h1 {
+    font-size: 20px;
+}
+
+section p {
+    font-size: 16px;
+    color: #C1C1C1;
+}
+
+main {
+    max-width: 520px;
+    width: 100%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+main section {
+    background-image: linear-gradient(90deg, #A9A9A9 0%, #262528 50%,#6A4033 70%);
+    padding-top: 4px;
+    border-radius: 10px;
+    border-radius: 8px;
+    animation: fromLeft 1s .3s backwards;
+  }
+
+section div {
+    background-color: #262629;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+section ul {
+    display: flex;
+    gap: 19px;
+    padding-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+.movies-list img {
+    width: 100px;
+    border-radius: 8px;
+    animation: fromLeft 1s .3s backwards;
+}
+
+.series-list img {
+    width: 100px;
+    border-radius: 8px;
+    animation: fromLeft 1s .3s backwards;
+}
+.animes-list img {
+    width: 100px;
+    border-radius: 8px;
+    animation: fromLeft 1s .3s backwards;
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+#madeBy {
+    color: #A9A9A9;
+    font-size: 15px;
+    text-align: center;
+}
