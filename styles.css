@@ -38,8 +38,13 @@ header img {
 
 body {
     background-image: url(./assets/movie-bg.jpg);
-    background-position: auto;
+    background-position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #223033;
+  }
+
+body * {
     font-size: 15px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   }
@@ -58,8 +63,8 @@ section p {
 }
 
 main {
-    max-width: 520px;
-    width: 100%;
+    max-width: 525px;
+    width: 90%;
     margin: 32px auto;
     display: grid;
     gap: 24px;
@@ -81,6 +86,7 @@ section div {
 
 section ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 19px;
     padding-top: 24px;
 }
